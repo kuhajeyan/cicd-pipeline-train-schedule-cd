@@ -8,8 +8,8 @@ pipeline {
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
-        stage('DeployStaing'){
-            when{
+        stage('DeployStaing') {
+            when {
                 'master'
             }
             steps {
